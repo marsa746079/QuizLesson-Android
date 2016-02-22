@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">QuizLesson</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">設定</string>
+
+    <!-- Genre -->
+    <string name="genre_true_false">○×</string>
+    <string name="genre_choice">四択</string>
+    <string name="genre_assoc">連想</string>
+    <string name="genre_typing">タイピング</string>
+    <string name="genre_effect">エフェクト</string>
+    <string name="genre_cube">キューブ</string>
+    <string name="genre_panel">文字パネル</string>
+    <string name="genre_sort">並べ替え</string>
+    <string name="genre_slot">スロット</string>
+    <string name="genre_multi">一問多答</string>
+    <string name="genre_line">線結び</string>
+    <string name="genre_order">順番当て</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

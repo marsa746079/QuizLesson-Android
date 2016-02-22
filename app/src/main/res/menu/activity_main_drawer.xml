@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_true_false" android:title="@string/genre_true_false" />
+    <item android:id="@+id/nav_choice" android:title="@string/genre_choice" />
+    <item android:id="@+id/nav_assoc" android:title="@string/genre_assoc" />
+    <item android:id="@+id/nav_typing" android:title="@string/genre_typing" />
+    <item android:id="@+id/nav_effect" android:title="@string/genre_effect" />
+    <item android:id="@+id/nav_cube" android:title="@string/genre_cube" />
+    <item android:id="@+id/nav_panel" android:title="@string/genre_panel" />
+    <item android:id="@+id/nav_sort" android:title="@string/genre_sort" />
+    <item android:id="@+id/nav_slot" android:title="@string/genre_slot" />
+    <item android:id="@+id/nav_multi" android:title="@string/genre_multi" />
+    <item android:id="@+id/nav_line" android:title="@string/genre_line" />
+    <item android:id="@+id/nav_order" android:title="@string/genre_order" />
+
+</menu>
