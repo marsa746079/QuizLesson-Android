@@ -91,26 +91,37 @@ public class MainActivity extends AppCompatActivity
                 fragment = QuizLessonConstants.FRAGMENT_TRUE_FALSE;
                 break;
             case R.id.nav_choice:
+                fragment = QuizLessonConstants.FRAGMENT_CHOICE;
                 break;
             case R.id.nav_assoc:
+                fragment = QuizLessonConstants.FRAGMENT_ASSOC;
                 break;
             case R.id.nav_typing:
+                fragment = QuizLessonConstants.FRAGMENT_TYPING;
                 break;
             case R.id.nav_effect:
+                fragment = QuizLessonConstants.FRAGMENT_EFFECT;
                 break;
             case R.id.nav_cube:
+                fragment = QuizLessonConstants.FRAGMENT_CUBE;
                 break;
             case R.id.nav_panel:
+                fragment = QuizLessonConstants.FRAGMENT_PANEL;
                 break;
             case R.id.nav_sort:
+                fragment = QuizLessonConstants.FRAGMENT_SORT;
                 break;
             case R.id.nav_slot:
+                fragment = QuizLessonConstants.FRAGMENT_SLOT;
                 break;
             case R.id.nav_multi:
+                fragment = QuizLessonConstants.FRAGMENT_MULTI;
                 break;
             case R.id.nav_line:
+                fragment = QuizLessonConstants.FRAGMENT_LINE;
                 break;
             case R.id.nav_order:
+                fragment = QuizLessonConstants.FRAGMENT_ORDER;
                 break;
         }
 
