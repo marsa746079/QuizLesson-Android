@@ -5,5 +5,10 @@
     android:orientation="vertical"
     tools:context="com.indigobell.quizlesson.fragment.TrueFalseFragment">
 
+    <!-- ○×クイズのレイアウト -->
+    <include layout="@layout/part_quiz_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
 
 </LinearLayout>
