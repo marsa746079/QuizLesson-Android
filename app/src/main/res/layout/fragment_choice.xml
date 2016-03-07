@@ -12,40 +12,9 @@
         android:layout_height="0dp"
         android:layout_weight="0.5"/>
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:weightSum="1"
+    <include layout="@layout/part_choice_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.5">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.25"
-            android:text="New Button"
-            android:id="@+id/button" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.25"
-            android:text="New Button"
-            android:id="@+id/button2" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.25"
-            android:text="New Button"
-            android:id="@+id/button3" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.25"
-            android:text="New Button"
-            android:id="@+id/button4" />
-    </LinearLayout>
+        android:layout_weight="0.5"/>
 
 </LinearLayout>

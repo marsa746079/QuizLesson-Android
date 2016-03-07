@@ -6,6 +6,10 @@
 
     <string name="action_settings">設定</string>
 
+    <string name="true_string">○</string>
+    <string name="false_string">×</string>
+    <string name="dummy_string">dummy</string>
+
     <!-- Genre -->
     <string name="genre_true_false">○×</string>
     <string name="genre_choice">四択</string>

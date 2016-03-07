@@ -5,8 +5,10 @@
     android:orientation="vertical"
     tools:context="com.indigobell.quizlesson.fragment.SortFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <!-- 並べ替えのレイアウト -->
+    <include layout="@layout/part_quiz_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
 
 </LinearLayout>

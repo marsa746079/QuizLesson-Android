@@ -11,4 +11,28 @@
         android:layout_height="0dp"
         android:layout_weight="0.5"/>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/true_string"
+            android:textSize="160sp"
+            android:id="@+id/true_button" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/false_string"
+            android:textSize="160sp"
+            android:id="@+id/false_button" />
+
+    </LinearLayout>
 </LinearLayout>

@@ -36,6 +36,13 @@ public class MainActivity extends AppCompatActivity
 //            }
 //        });
 
+        // Fragmentの設定
+        if (savedInstanceState == null) {
+            FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+            tx.replace(R.id.content_container, Fragment.instantiate(MainActivity.this, QuizLessonConstants.FRAGMENT_TRUE_FALSE));
+            tx.commit();
+        }
+
         // ドロワーの設定
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

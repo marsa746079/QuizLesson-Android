@@ -5,8 +5,15 @@
     android:orientation="vertical"
     tools:context="com.indigobell.quizlesson.fragment.OrderFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <!-- 順番当てのレイアウト -->
+    <include layout="@layout/part_quiz_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <include layout="@layout/part_choice_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
 
 </LinearLayout>
