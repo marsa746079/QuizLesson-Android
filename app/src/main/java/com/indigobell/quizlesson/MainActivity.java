@@ -1,5 +1,6 @@
 package com.indigobell.quizlesson;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -13,9 +14,33 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.indigobell.quizlesson.common.QuizLessonConstants;
+import com.indigobell.quizlesson.fragment.AssocFragment;
+import com.indigobell.quizlesson.fragment.ChoiceFragment;
+import com.indigobell.quizlesson.fragment.CubeFragment;
+import com.indigobell.quizlesson.fragment.EffectFragment;
+import com.indigobell.quizlesson.fragment.LineFragment;
+import com.indigobell.quizlesson.fragment.MultiFragment;
+import com.indigobell.quizlesson.fragment.OrderFragment;
+import com.indigobell.quizlesson.fragment.PanelFragment;
+import com.indigobell.quizlesson.fragment.SlotFragment;
+import com.indigobell.quizlesson.fragment.SortFragment;
+import com.indigobell.quizlesson.fragment.TrueFalseFragment;
+import com.indigobell.quizlesson.fragment.TypingFragment;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,
+        AssocFragment.OnFragmentInteractionListener,
+        ChoiceFragment.OnFragmentInteractionListener,
+        CubeFragment.OnFragmentInteractionListener,
+        EffectFragment.OnFragmentInteractionListener,
+        LineFragment.OnFragmentInteractionListener,
+        MultiFragment.OnFragmentInteractionListener,
+        OrderFragment.OnFragmentInteractionListener,
+        PanelFragment.OnFragmentInteractionListener,
+        SlotFragment.OnFragmentInteractionListener,
+        SortFragment.OnFragmentInteractionListener,
+        TrueFalseFragment.OnFragmentInteractionListener,
+        TypingFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -140,5 +165,65 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    // AssocFragment Event Listener
+    @Override
+    public void onAssocButtonClick(int index) {
+
+    }
+
+    @Override
+    public void onChoiceFragmentInteraction(Uri uri) {
+
+    }
+    @Override
+    public void onCubeFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onEffectFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onLineFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onMultiFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onOrderFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onPanelFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onSlotFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onSortFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onTrueFalseFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onTypingFragmentInteraction(Uri uri) {
+
     }
 }
