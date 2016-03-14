@@ -15,5 +15,6 @@ public class QuizLessonConstants {
     public static final String FRAGMENT_MULTI = "com.indigobell.quizlesson.fragment.MultiFragment";
     public static final String FRAGMENT_LINE = "com.indigobell.quizlesson.fragment.LineFragment";
     public static final String FRAGMENT_ORDER = "com.indigobell.quizlesson.fragment.OrderFragment";
+    public static final String FRAGMENT_GROUP = "com.indigobell.quizlesson.fragment.GroupFragment";
 
 }

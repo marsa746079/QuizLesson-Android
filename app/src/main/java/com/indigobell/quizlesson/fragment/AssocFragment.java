@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,11 @@ import com.indigobell.quizlesson.R;
  * create an instance of this fragment.
  */
 public class AssocFragment extends Fragment {
+    /* ---------------------------------------------------------------------- */
+    /* Field                                                                  */
+    /* ---------------------------------------------------------------------- */
+    public static final String TAG = AssocFragment.class.getSimpleName();
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -61,13 +67,32 @@ public class AssocFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        Log.d(TAG, "onCreate");
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Log.d(TAG, "onCreateView");
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_assoc, container, false);
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Log.d(TAG, "onViewCreated");
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        // 再生成時にはsavedInstanceStateがnullじゃない
+        if (savedInstanceState != null) {
+            // isLogin = savedInstanceState.getBoolean("isLogin");
+        }
+        Log.d(TAG, "onActivityCreated");
     }
 
     @Override
@@ -110,7 +135,37 @@ public class AssocFragment extends Fragment {
                 }
             }
         });
+        Log.d(TAG, "onStart");
+    }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume");
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy");
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        // outState.putBoolean("isLogin", isLogin );
     }
 
 //    public void onAssocButton1Click() {

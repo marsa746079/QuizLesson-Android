@@ -13,5 +13,6 @@
     <item android:id="@+id/nav_multi" android:title="@string/genre_multi" />
     <item android:id="@+id/nav_line" android:title="@string/genre_line" />
     <item android:id="@+id/nav_order" android:title="@string/genre_order" />
+    <item android:id="@+id/nav_group" android:title="@string/genre_group" />
 
 </menu>

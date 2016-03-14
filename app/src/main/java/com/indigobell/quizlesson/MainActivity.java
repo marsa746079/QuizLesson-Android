@@ -18,6 +18,7 @@ import com.indigobell.quizlesson.fragment.AssocFragment;
 import com.indigobell.quizlesson.fragment.ChoiceFragment;
 import com.indigobell.quizlesson.fragment.CubeFragment;
 import com.indigobell.quizlesson.fragment.EffectFragment;
+import com.indigobell.quizlesson.fragment.GroupFragment;
 import com.indigobell.quizlesson.fragment.LineFragment;
 import com.indigobell.quizlesson.fragment.MultiFragment;
 import com.indigobell.quizlesson.fragment.OrderFragment;
@@ -40,7 +41,8 @@ public class MainActivity extends AppCompatActivity
         SlotFragment.OnFragmentInteractionListener,
         SortFragment.OnFragmentInteractionListener,
         TrueFalseFragment.OnFragmentInteractionListener,
-        TypingFragment.OnFragmentInteractionListener {
+        TypingFragment.OnFragmentInteractionListener,
+        GroupFragment.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -155,6 +157,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_order:
                 fragment = QuizLessonConstants.FRAGMENT_ORDER;
                 break;
+            case R.id.nav_group:
+                fragment = QuizLessonConstants.FRAGMENT_GROUP;
+                break;
         }
 
         // Fragmentの設定
@@ -224,6 +229,11 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onTypingFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onGroupFragmentInteraction(Uri uri) {
 
     }
 }
